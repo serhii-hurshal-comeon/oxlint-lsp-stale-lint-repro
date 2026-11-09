@@ -1,0 +1,16 @@
+{
+	"name": "oxlint-lsp-stale-lint-repro",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"generate": "node gen.mjs synthetic 15000",
+		"repro": "node run.mjs 15",
+		"repro:single": "node run.mjs 1",
+		"repro:no-type-aware": "node run.mjs 15 --no-type-aware",
+		"repro:cli": "node cli.mjs"
+	},
+	"devDependencies": {
+		"oxlint": "1.91.0",
+		"oxlint-tsgolint": "7.0.2005"
+	}
+}
